@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/folding-cards.css">
     
 </head>
 <body>
@@ -71,68 +72,292 @@
             sexual, de ter acesso à informação e à educação sexual e reprodutiva, entre outros aspectos que possibilitam a expressão livre da sexualidade, 
             são direitos sexuais e humanos. Dentro dessa lógica, alguns conceitos precisam ser conhecidos para que a avaliação das sexualidades seja realizada de maneira integral:
         </p>
-        <ul>
-            <li>
-                <b>Orientação sexual:</b> é a atração que alguém sente por outros indivíduos Geralmente, envolve questões sentimentais, e não somente sexuais.
+        <ol class="articles">
+            <li class="articles__article" style="--animation-order:1">
+                <a class="articles__link" data-toggle="modal" data-target="#orientacao">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Orientação sexual</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Orientação sexual</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Identidade de gênero:</b> é uma classificação pessoal e social das pessoas como homens ou mulheres, que pode ou não concordar com o gênero que lhes foi atribuído ao nascimento.
+            <li class="articles__article" style="--animation-order:2">
+                <a class="articles__link" data-toggle="modal" data-target="#identidade">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Identidade de gênero</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Identidade de gênero</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Sexo designado ao nascimento:</b> refere-se aos aspectos anatômicos e morfológicos da genitália ao nascimento.
+            <li class="articles__article" style="--animation-order:3">
+                <a class="articles__link" data-toggle="modal" data-target="#sexo">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Sexo designado ao nascimento</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Sexo designado ao nascimento</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Expressão de gênero:</b> é a forma como a pessoa se apresenta, sua aparência e seu comportamento. 
+            <li class="articles__article" style="--animation-order:4">
+                <a class="articles__link" data-toggle="modal" data-target="#expressao">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Expressão de gênero</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Expressão de gênero</h2>
+                    </div>
+                </a>
             </li>
-        </ul>
-        <!-- <p> <b>Orientação sexual:</b> é a atração que alguém sente por outros indivíduos Geralmente, envolve questões sentimentais, e não somente sexuais. <br />
-            <b>Identidade de gênero:</b> é uma classificação pessoal e social das pessoas como homens ou mulheres, que pode ou não concordar com o gênero que lhes foi atribuído ao nascimento. <br />
-            <b>Sexo designado ao nascimento:</b> refere-se aos aspectos anatômicos e morfológicos da genitália ao nascimento. <br />
-            <b>Expressão de gênero:</b> é a forma como a pessoa se apresenta, sua aparência e seu comportamento. 
-        </p> -->
+        </ol>
+        <!--Modais-->
+        <div class="modal fade" id="orientacao" tabindex="-1" role="dialog" aria-labelledby="orientacao-sexual" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Orientação sexual</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    É a atração que alguém sente por outros indivíduos Geralmente, envolve questões sentimentais, e não somente sexuais.
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="identidade" tabindex="-1" role="dialog" aria-labelledby="identidade-genero" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Identidade de gênero</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    É uma classificação pessoal e social das pessoas como homens ou mulheres, que pode ou não concordar com o gênero que lhes foi atribuído ao nascimento.                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="sexo" tabindex="-1" role="dialog" aria-labelledby="sexo-nascimento" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sexo designado ao nascimento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    Refere-se aos aspectos anatômicos e morfológicos da genitália ao nascimento.
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="expressao" tabindex="-1" role="dialog" aria-labelledby="expressao-genero" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Expressão de gênero</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    É a forma como a pessoa se apresenta, sua aparência e seu comportamento. 
+                </div>
+            </div>
+        </div>
+       
         <p>A seguir, listam-se alguns conceitos sobre as populações-chave que podem contribuir para uma melhor compreensão sobre as pessoas atendidas no serviço de saúde:</p>
-        <ul>
-            <li>
-            <b>Gays e outros homens que fazem sexo com homens (HSH):</b> são pessoas de identidade de gênero masculina que vivenciam suas sexualidades e afetos com outros homens. 
-            A distinção entre gays e HSH é que a primeira categoria, além da prática sexual, traz em seu bojo a noção de pertencimento e identificação, 
-            enquanto a segunda se encerra nas práticas sexuais e afetividades.
+        
+        <ol class="articles">
+            <li class="articles__article" style="--animation-order:5">
+                <a class="articles__link" data-toggle="modal" data-target="#gaysehsh">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Gays e outros homens que fazem sexo com homens (HSH)</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Gays e outros homens que fazem sexo com homens (HSH)</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Trabalhadores do sexo:</b> são pessoas adultas que exercem a troca consensual de serviços, atividades ou favores sexuais por dinheiro, 
-                bens, objetos ou serviços que tenham valor (seja de cunho monetário ou não), troca esta que pode assumir as mais variadas formas e modalidades. 
-                A prostituição pode ser realizada pela(o) profissional de forma ocasional ou regular (independentemente da frequência), e nos mais diversos espaços e situações. 
-                Pode envolver a intermediação de uma terceira pessoa ou a negociação direta entre profissional e cliente, desde que haja consentimento das partes envolvidas, sem constrangimento ou pressão.
+            <li class="articles__article" style="--animation-order:6">
+                <a class="articles__link" data-toggle="modal" data-target="#trabalhadores">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Trabalhadores do sexo</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Trabalhadores do sexo</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Pessoas trans:</b> são aquelas cuja identidade e expressão de gênero não está em conformidade com as normas e expectativas 
-                impostas pela sociedade em relação ao gênero que lhes foi designado ao nascer, com base em sua genitália. Durante muito tempo, 
-                essas diferentes formas de identidade foram erroneamente confundidas com questões relacionadas somente à orientação sexual – interpretação 
-                que limitava seu caráter identitário. As pessoas trans reivindicam, acima de tudo, o reconhecimento social de sua identidade. 
-                A categoria de pessoas trans é bastante ampla e, no presente documento, serão enfocados três grupos: mulheres transexuais, travestis e homens trans (BRASIL, 2017e).
+            <li class="articles__article" style="--animation-order:7">
+                <a class="articles__link" data-toggle="modal" data-target="#pessoastrans">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Pessoas trans</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Pessoas trans</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Mulheres transexuais:</b> são pessoas que nasceram com pênis e possuem identidade de gênero feminina, desempenhando papel social de gênero feminino. 
-                Têm o desejo de serem reconhecidas como mulheres e serem tratadas no feminino e pelo nome com o qual se identificam. 
-                Também como forma de reafirmar sua identidade feminina, geralmente buscam a adequação de sua imagem física e de seus corpos, 
-                podendo recorrer ao uso de hormonoterapia e procedimentos cirúrgicos, bem como à cirurgia de redesignação sexual.
+            <li class="articles__article" style="--animation-order:8">
+                <a class="articles__link" data-toggle="modal" data-target="#mulherestrans">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Mulheres transexuais</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Mulheres transexuais</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Travestis:</b> são pessoas que nasceram com pênis e possuem identidade de gênero feminina. 
-                Identificam-se como travestis e reivindicam a legitimidade de sua identidade para além dos parâmetros binários do masculino e do feminino, 
-                desejando, todavia, serem tratadas no feminino e pelo nome com o qual se identificam. Também como forma de reafirmar sua identidade feminina, 
-                geralmente buscam a adequação de sua imagem física e de seus corpos, podendo recorrer, para tal, ao uso de hormonoterapia e procedimentos cirúrgicos, 
-                não desejando, geralmente, a cirurgia de redesignação sexual. É de grande importância refletir sobre as identidades de mulheres transexuais e travestis, 
-                pois estas possuem alguns pontos em comum, como sua expressão de gênero feminina. A diferença que pode marcar as duas identidades seria a 
-                identificação política e/ou subjetiva, em que uma se afirma como uma travesti e outra como mulher transexual.
+            <li class="articles__article" style="--animation-order:9">
+                <a class="articles__link" data-toggle="modal" data-target="#travestis">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Travestis</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Travestis</h2>
+                    </div>
+                </a>
             </li>
-            <li>
-                <b>Homens trans:</b> são pessoas que nasceram com vagina e possuem identidade de gênero masculina, desempenhando papel social de 
-                gênero masculino. Reivindicam serem reconhecidos e tratados de acordo com sua identidade de gênero, ou seja, no masculino, e pelo nome 
-                com o qual se identificam. Buscam também adequar suas imagens e corpos à sua identidade de gênero, mediante o uso, entre outros recursos, 
-                de hormonoterapia, procedimentos cirúrgicos, histerectomia (retirada de útero e ovários) e redesignação sexual.
+            <li class="articles__article" style="--animation-order:10">
+                <a class="articles__link" data-toggle="modal" data-target="#homenstrans">
+                    <div class="articles__content articles__content--lhs">
+                        <h2 class="articles__title">Homens trans</h2>
+                    </div>
+                    <div class="articles__content articles__content--rhs" aria-hidden="true">
+                        <h2 class="articles__title">Homens trans</h2>
+                    </div>
+                </a>
             </li>
-        </ul>
+        </ol>
+
+        <!-- Modais -->
+        <div class="modal fade" id="gaysehsh" tabindex="-1" role="dialog" aria-labelledby="gays-e-hsh" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Gays e outros homens que fazem sexo com homens (HSH)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São pessoas de identidade de gênero masculina que vivenciam suas sexualidades e afetos com outros homens. <br />
+                    A distinção entre gays e HSH é que a primeira categoria, além da prática sexual, traz em seu bojo a noção de pertencimento e identificação, 
+                    enquanto a segunda se encerra nas práticas sexuais e afetividades.
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="trabalhadores" tabindex="-1" role="dialog" aria-labelledby="trabalhadores-do-sexo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Trabalhadores do Sexo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São pessoas adultas que exercem a troca consensual de serviços, atividades ou favores sexuais por dinheiro, 
+                    bens, objetos ou serviços que tenham valor (seja de cunho monetário ou não), troca esta que pode assumir as mais variadas formas e modalidades. 
+                    A prostituição pode ser realizada pela(o) profissional de forma ocasional ou regular (independentemente da frequência), e nos mais diversos espaços e situações. 
+                    Pode envolver a intermediação de uma terceira pessoa ou a negociação direta entre profissional e cliente, desde que haja consentimento das partes envolvidas, sem constrangimento ou pressão.
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="pessoastrans" tabindex="-1" role="dialog" aria-labelledby="pessoas-trans" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pessoas Trans</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São aquelas cuja identidade e expressão de gênero não está em conformidade com as normas e expectativas 
+                    impostas pela sociedade em relação ao gênero que lhes foi designado ao nascer, com base em sua genitália. Durante muito tempo, 
+                    essas diferentes formas de identidade foram erroneamente confundidas com questões relacionadas somente à orientação sexual – interpretação 
+                    que limitava seu caráter identitário. As pessoas trans reivindicam, acima de tudo, o reconhecimento social de sua identidade. 
+                    A categoria de pessoas trans é bastante ampla e, no presente documento, serão enfocados três grupos: mulheres transexuais, travestis e homens trans (BRASIL, 2017e).
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="mulherestrans" tabindex="-1" role="dialog" aria-labelledby="mulheres-trans" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mulheres Transexuais</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São pessoas que nasceram com pênis e possuem identidade de gênero feminina, desempenhando papel social de gênero feminino. 
+                    Têm o desejo de serem reconhecidas como mulheres e serem tratadas no feminino e pelo nome com o qual se identificam. 
+                    Também como forma de reafirmar sua identidade feminina, geralmente buscam a adequação de sua imagem física e de seus corpos, 
+                    podendo recorrer ao uso de hormonoterapia e procedimentos cirúrgicos, bem como à cirurgia de redesignação sexual.
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="travestis" tabindex="-1" role="dialog" aria-labelledby="travestis" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Travestis</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São pessoas que nasceram com pênis e possuem identidade de gênero feminina. 
+                    Identificam-se como travestis e reivindicam a legitimidade de sua identidade para além dos parâmetros binários do masculino e do feminino, 
+                    desejando, todavia, serem tratadas no feminino e pelo nome com o qual se identificam. Também como forma de reafirmar sua identidade feminina, 
+                    geralmente buscam a adequação de sua imagem física e de seus corpos, podendo recorrer, para tal, ao uso de hormonoterapia e procedimentos cirúrgicos, 
+                    não desejando, geralmente, a cirurgia de redesignação sexual. É de grande importância refletir sobre as identidades de mulheres transexuais e travestis, 
+                    pois estas possuem alguns pontos em comum, como sua expressão de gênero feminina. A diferença que pode marcar as duas identidades seria a 
+                    identificação política e/ou subjetiva, em que uma se afirma como uma travesti e outra como mulher transexual.
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="homenstrans" tabindex="-1" role="dialog" aria-labelledby="homens-trans" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Homens Trans</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    São pessoas que nasceram com vagina e possuem identidade de gênero masculina, desempenhando papel social de 
+                    gênero masculino. Reivindicam serem reconhecidos e tratados de acordo com sua identidade de gênero, ou seja, no masculino, e pelo nome 
+                    com o qual se identificam. Buscam também adequar suas imagens e corpos à sua identidade de gênero, mediante o uso, entre outros recursos, 
+                    de hormonoterapia, procedimentos cirúrgicos, histerectomia (retirada de útero e ovários) e redesignação sexual.
+                </div>
+            </div>
+            </div>
+        </div>
+
     </section>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

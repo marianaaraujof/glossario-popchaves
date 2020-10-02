@@ -85,3 +85,17 @@ b {
     font-weight: 700;
 }
 
+/* Modais */
+
+.modal-header {
+    background-color: #1d3557;
+}
+
+.modal-header h5 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.modal-header .close {
+    color: #fff;
+}
