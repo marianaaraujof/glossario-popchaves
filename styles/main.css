@@ -86,9 +86,11 @@ b {
 }
 
 /* Modais */
-
-.modal-header {
-    background-color: #1d3557;
+.modal-color-1 {
+    background-color: #1D3557;
+}
+.modal-color-2 {
+    background-color: #318C38;
 }
 
 .modal-header h5 {
